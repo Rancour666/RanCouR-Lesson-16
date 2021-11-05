@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container _container">
+					<div class="header__body">
+						<h1>Домашняя робота №16</h1>
+					</div>
+				</div>
+				<div class="aqua-block"><div class="form-additional__aquarium"></div></div>
+			</header>
+			<main>
+				<div class="appointment">
+					<div class="appointment__container _container">
+						<div class="appointment__body body-appointment">
+							<div class="body-appointment__title">Make an appointment</div>
+							<div class="body-appointment__form">
+								<form class="form-appointment" action="#">
+									<div class="form-appointment__main-form appointment-main">
+										<div class="appointment-main__unit"><input class="appointment-main__input" name="Name" placeholder="Name" type="text" value="" autocomplete="off" required></div>
+										<div class="appointment-main__unit"><input class="appointment-main__input" name="Email" placeholder="Email" type="email" value="" autocomplete="off" required></div>
+										<div class="appointment-main__unit"><input class="appointment-main__input" name="Phone" placeholder="Phone Number" type="tel" value="" autocomplete="off"></div>
+										<div class="appointment-main__unit"><input class="appointment-main__input" name="Service" placeholder="Select Service" type="text" value="" autocomplete="off" required></div>
+									</div>
+									<textarea class="form-appointment__textarea" name="text" placeholder="Tell us about your puppers include his/her name"></textarea>
+									<button class="form-appointment__button" type="submit">Make an Appointment</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="summary">
+					<div class="summary__container _container">
+						<div class="summary__body body-summary">
+							<div class="body-summary__title">Summary</div>
+							<div class="body-summary__shipping-option">Estimate Shipping and Tax</div>
+							<div class="body-summary__shipping-instruction">Enter your destination to get a shipping estimate.</div>
+							<div class="body-summary__form">
+								<form class="form-summary" action="#">
+									<div class="form-summary__unit unit">
+										<label for="country" class="form-summary__label common-label">Country</label>
+										<input id="country" class="form-summary__input common-input" name="Country" placeholder="Australia" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-summary__unit unit">
+										<label for="state" class="form-summary__label common-label">State/Province</label>
+										<input id="state" class="form-summary__input common-input" name="State/Province" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-summary__unit unit">
+										<label for="zip" class="form-summary__label common-label">Zip/Postal Code</label>
+										<input id="zip" class="form-summary__input common-input" name="Zip/PostalCode" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-summary__unit unit">
+										<label for="delivery" class="form-summary__label common-label">Standard Rate</label>
+										<input id="delivery" class="form-summary__radiobutton-input" name="pickup-delivery" type="radio"  value="delivery" checked autocomplete="off">
+										<div class="form-summary__radiobutton-text">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</div>
+									</div>
+									<div class="form-summary__unit unit">
+										<label for="pick-up" class="form-summary__label common-label">Pickup from store</label>
+										<input id="pick-up" class="form-summary__radiobutton-input" name="pickup-delivery" type="radio" value="pick-up" autocomplete="off">
+										<div class="form-summary__radiobutton-text" >1234 Street Adress City Address, 1234 $0.00</div>
+									</div>
+									<div class="form-summary__discount-option">Apply Discount Code</div>
+									<div class="form-summary__unit unit">
+										<label for="discount" class="form-summary__label common-label">Enter discount code</label>
+										<input id="discount" class="form-summary__input common-input" name="DiscountCode" type="text" placeholder="Enter Discount code" value="" autocomplete="off">
+									</div>
+									<button class="form-summary__button" type="submit">Apply Discount</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="customers">
+					<div class="customers__container _container">
+						<div class="customers__body body-customers">
+							<div class="body-customers__title">Registered Customers</div>
+							<div class="body-customers__instructions">If you have an account, sign in with your email address.</div>
+							<div class="body-customers__form">
+								<form class="form-customers" action="#">
+									<div class="form-customers__unit unit">
+										<label for="email" class="form-customers__label common-label">Email<span class="star">*</span></label>
+										<input id="email" class="form-customers__input common-input" name="email" placeholder="Your Name" type="email" value="" autocomplete="off" required>
+									</div>
+									<div class="form-customers__unit unit">
+										<label for="password" class="form-customers__label common-label">Password<span class="star">*</span></label>
+										<input id="password" class="form-customers__input common-input" name="password"  placeholder="Your Name"  type="password" value="" autocomplete="off" required>
+									</div>
+									<div class="form-customers__sign-in sign-in">
+										<button class="sign-in__button blue-button" type="submit">Sign In</button>
+										<a href="" class="sign-in__forgot-password">Forgot Your Password?</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="shipping">
+					<div class="shipping__container _container">
+						<div class="shipping__body body-shipping">
+							<div class="body-shipping__title">Shipping Address</div>
+							<div class="body-shipping__form">
+								<form class="form-shipping" action="#">
+									<div class="form-shipping__unit unit">
+										<label for="email" class="form-shipping__label common-label">Email Address<span class="star">*</span></label>
+										<input id="email" class="form-shipping__input common-input" name="email" type="email" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__instructions">If you have an account, sign in with your email address.</div>
+									<div class="form-shipping__unit unit">
+										<label for="first-name" class="form-shipping__label common-label">First Name<span class="star">*</span></label>
+										<input id="first-name" class="form-shipping__input common-input" name="first-name" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__unit unit">
+										<label for="last-name" class="form-shipping__label common-label">Last Name<span class="star">*</span></label>
+										<input id="last-name" class="form-shipping__input common-input" name="last-name" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__unit unit">
+										<label for="company" class="form-shipping__label common-label">Company<span class="star">*</span></label>
+										<input id="company" class="form-shipping__input common-input" name="company" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__unit unit">
+										<label for="street-address" class="form-shipping__label common-label">Street Address<span class="star">*</span></label>
+										<input id="street-address" class="form-shipping__input common-input" name="street-address" type="text" value="" autocomplete="off" required>
+										<input id="street-address" class="form-shipping__input form-shipping__input_second common-input" name="street-address" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__unit unit">
+										<label for="city" class="form-shipping__label common-label">City<span class="star">*</span></label>
+										<input id="city" class="form-shipping__input common-input" name="city" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__unit unit">
+										<label for="state-province" class="form-shipping__label common-label">State/Province<span class="star">*</span></label>
+										<input id="state-province" class="form-shipping__input common-input" placeholder="Please, select a region, state or province" name="state-province" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__unit unit">
+										<label for="zip-postal-code" class="form-shipping__label common-label">Zip/Postal Code<span class="star">*</span></label>
+										<input id="zip-postal-code" class="form-shipping__input common-input"  name="zip-postal-code" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__unit unit">
+										<label for="country*" class="form-shipping__label common-label">Country<span class="star">*</span></label>
+										<input id="country*" class="form-shipping__input common-input"  name="country*" placeholder="United States" type="text" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__unit unit">
+										<label for="phone-number" class="form-shipping__label common-label">Phone Number<span class="star">*</span></label>
+										<input id="phone-number" class="form-shipping__input common-input"  name="phone-number" type="phone" value="" autocomplete="off" required>
+									</div>
+									<div class="form-shipping__line"></div>
+									<div class="form-shipping__unit unit">
+										<label for="delivery*" class="form-shipping__label common-label">Standard Rate</label>
+										<input id="delivery*" class="form-shipping__radiobutton-input" name="pickup-delivery" type="radio"  value="delivery" checked autocomplete="off">
+										<div class="form-shipping__radiobutton-text">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</div>
+									</div>
+									<div class="form-shipping__unit unit">
+										<label for="pick-up*" class="form-shipping__label common-label">Pickup from store</label>
+										<input id="pick-up*" class="form-shipping__radiobutton-input" name="pickup-delivery" type="radio" value="pick-up" autocomplete="off">
+										<div class="form-shipping__radiobutton-text" >1234 Street Adress City Address, 1234 $0.00</div>
+									</div>
+									<button class="form-shipping__button blue-button" type="submit">Next</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="additional">
+					<div class="additional__container _container">
+						<div class="additional__body body-additional">
+							<div class="body-additional__title">Additional Properties</div>
+							<div class="body-additional__form">
+								<form class="form-additional" action="#">
+									<div class="form-additional__title">CHECKBOX</div>
+									<div class="form-additional__unit">
+										<input id="live" class="form-additional__input" name="live" type="checkbox" value="live" autocomplete="off">
+										<label for="live" class="form-additional__label">Живи!</label>
+									</div>
+									<div class="form-additional__unit">
+										<input id="work" class="form-additional__input form-additional__input_second" name="work" type="checkbox" value="work" autocomplete="off">
+										<label for="work" class="form-additional__label">А работай!</label>
+									</div>
+									<div class="form-additional__unit">
+										<input id="free" class="form-additional__input form-additional__input_third" name="free-time" type="checkbox" value="free-time" autocomplete="off">
+										<label for="free" class="form-additional__label">В свободное время!</label>
+									</div>
+									<div class="form-additional__list">
+										<label class="menu-label" for="list">Чего бы щас сделать?!?!</label>
+										<select class="menu-box" name="select" id="list">
+											<option class="menu-item" value="Relax">Отдохнуть?</option>
+											<option class="menu-item" value="Take a walk">Погулять?</option>
+											<option class="menu-item" value="Eat">Поесть?</option>
+											<option class="menu-item" value="Drink Bear">Выпить пивка?</option>
+											<option class="menu-item" value="Sleep">Поспать?</option>
+											<option class="menu-item" selected value="Work">Верстать!!!</option>
+										</select>
+									</div>
+									<button class="form-shipping__button blue-button blue-button_mod" type="submit">SEND</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__container _container">
+					<div class="footer__body">
+						<h1>Домашняя робота №16</h1>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
