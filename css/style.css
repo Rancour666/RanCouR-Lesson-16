@@ -326,7 +326,7 @@ main {
 	padding: 0px 0px 0px 17px;
 	border: 1px solid #a2a6b0;
 	border-radius: 4px;
-	transition: all 0.3s ease 0s;
+	transition: all 0.5s ease 0s;
 }
 
 .common-input::placeholder {
@@ -336,7 +336,21 @@ main {
 	line-height: 1.43;
 	color: #a2a6b0;
 }
+.form-summary__option{
+	font-family: "Poppins";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000;
+}
 
+.form-summary__input{
+	font-family: "Poppins";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000;
+}
 .form-summary__radiobutton-input {
 	position: absolute;
 	top: 0;
@@ -353,8 +367,8 @@ main {
 .form-summary__radiobutton-input:focus + .form-summary__radiobutton-text {
 	outline: 1px solid #a2a6b0;
 }
-.common-input:focus.common-input {
-	transform: scale(1.02);
+.common-input:focus{
+	border: 1px solid black;
 }
 .form-summary__radiobutton-text {
 	font-family: "Poppins";
@@ -535,7 +549,20 @@ max-width: 450px;
 	
 	margin: 0px 0px 21px 0px;
 }
-
+.form-shipping__option{
+	font-family: "Poppins";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000;
+}
+.form-shipping__input{
+	font-family: "Poppins";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.43;
+	color: #000;
+}
 .form-shipping__line{
 	background-color: #CACDD8;
 	width: 100%;
