@@ -701,7 +701,7 @@ opacity: 0;
 	color: rgb(0, 255, 145);
 }
 .form-additional__label:hover::before{
-	transform: scale(101%);
+	transform: scale(1.00001);
 }
 .form-additional__input_second:checked + .form-additional__label {
 	color: rgb(229, 255, 0);
