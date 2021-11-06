@@ -1,5 +1,7 @@
 /* &display=swap&subset=cyrillic-ext */
 
+
+
 /*Поключение Шрифтов*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap&subset=cyrillic-ext);
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=cyrillic-ext);
@@ -98,7 +100,7 @@ main {
 	background: url("../img/header-bg.jpg");
 	padding: 100px 0px;
 	position: relative;
-	z-index: 2;
+	z-index: 10;
 }
 
 .header__body {
@@ -121,7 +123,8 @@ main {
 .aqua-block{
 	position: fixed;
 	top: 40px;
-	left: 60px;
+	right: 40px;
+	z-index: 13;
 }
 
 .form-additional__aquarium {
@@ -133,6 +136,7 @@ main {
 	overflow: hidden;
 	background: url('../img/bubble-2.png') 0 0 / cover no-repeat, url('../img/me.jpg') 0 0 / cover no-repeat ;
 	margin: 0 auto;
+	
 }
 .form-additional__aquarium::after {
 	content: '';
@@ -152,15 +156,9 @@ main {
 		transform: rotate(360deg);
 	}
 }
-@keyframes bg {
-	to {
-		transform: rotate(360deg);
-	}
-}
-/*=================APPOINTMENT=============*/
-.appointment {
 
-}
+/*=================APPOINTMENT=============*/
+
 
 .appointment__body {
 	margin: 0px auto 100px;
@@ -179,8 +177,7 @@ main {
 	color: rgba(255, 255, 255, 1);
 	margin: 0px 0px 48px 0px;
 }
-.body-appointment__form {
-}
+
 .form-appointment {
 	display: flex;
 	flex-direction: column;
@@ -258,10 +255,11 @@ main {
 	transform: scale(1.05);
 	box-shadow:0px 0px 10px 1px #000;
 }
+
+
+
+
 /*=================SUMMARY=============*/
-.summary {
-	
-}
 
 .summary__body {
 	background: #f5f7ff;
@@ -296,10 +294,7 @@ main {
 	color: #666666;
 	max-width: 287px;
 }
-.body-summary__form {
-}
-.form-summary {
-}
+
 .unit {
 	display: flex;
 	flex-direction: column;
@@ -694,10 +689,7 @@ opacity: 0;
 	background: url('../img/bubble.png') 0 0 / cover no-repeat;
 }
 
-.form-additional__input:checked + .form-additional__label::before {
-	background: url('../img/bubble.png') 0 0 / cover no-repeat, url('../img/jeka.jpg') 0 0 / cover no-repeat;
-	transform: scale(1.5);
-}
+
 .form-additional__input:checked + .form-additional__label {
 	color: rgb(0, 255, 145);
 	font-size: 26px;
@@ -707,6 +699,9 @@ opacity: 0;
 }
 .form-additional__input:focus + .form-additional__label{
 	color: rgb(0, 255, 145);
+}
+.form-additional__label:hover::before{
+	transform: scale(101%);
 }
 .form-additional__input_second:checked + .form-additional__label {
 	color: rgb(229, 255, 0);
@@ -721,6 +716,10 @@ opacity: 0;
 }
 .form-additional__input_third:focus + .form-additional__label {
 	color: rgb(183, 0, 255);
+}
+.form-additional__input:checked + .form-additional__label::before {
+	background: url('../img/bubble.png') 0 0 / cover no-repeat, url('../img/jeka.jpg') 0 0 / cover no-repeat;
+	transform: scale(1.5);
 }
 .form-additional__input_second:checked + .form-additional__label::before {
 	background: url('../img/bubble.png') 0 0 / cover no-repeat, url('../img/evgen.jpg') 0 0 / cover no-repeat;
