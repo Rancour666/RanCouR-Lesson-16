@@ -141,14 +141,18 @@ main {
 .form-additional__aquarium::after {
 	content: '';
 	position: absolute;
-	top: 60%;
+	top: 80%;
 	left: -50%;
 	width: 200%;
 	height: 200%;
-	background: rgba(13, 148, 134, 0.693);
-	box-shadow: 0 0 20px rgba(13, 148, 134, 0.693);
+	background: rgba(26, 174, 243, 0.693);
+	box-shadow: 0 0 20px rgba(13, 71, 148, 0.693);
 	border-radius: 40%;
 	animation: rotate 16s linear forwards infinite;
+	transition: top 2.5s ease-out 0s;
+}
+.form-additional__aquarium:hover.form-additional__aquarium::after{
+	top: 0%;
 }
 
 @keyframes rotate {
